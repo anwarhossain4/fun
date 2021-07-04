@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Section tag</title>
+</head>
+<script type="text/javascript">
+    function submit()
+    {
+        document.getElementById("startrunning").click(); // Simulates button click
+        document.submitForm.submit(); // Submits the form without the button
+    }
+</script>
+
+<body>
+    <form onload="submit()">
+        <button id="startrunning" onclick="submit()">go</button>
+    </form>
+</body>
+</html>
